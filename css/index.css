@@ -72,6 +72,7 @@ a {
 html, body {
     width: 80vw;
     /* width: 880px; */
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -181,7 +182,7 @@ h1 {
 /* servicesBanner */
 
 #servicesBanner {
-    margin-top: 20px;
+    padding-top: 20px;
     padding-bottom: 40px;
     border-bottom: 1px solid black;
 }
@@ -206,7 +207,7 @@ h2 {
 .box {
     border: 1px solid black;
     padding: 20px;
-    width: 420px;
+    width: 48%;
     margin-bottom: 40px;
     background-color: #f4f3f4;
 }
@@ -235,8 +236,10 @@ h2 {
 }
 
 #servicesAbout div {
-    width: 400px;
+    width: 49%;
 }
+
+#servicesAbout img {width: 49%}
 
 ul {list-style: square inside;margin-top: 30px;}
 
@@ -365,4 +368,20 @@ li {margin-bottom: 1em}
     }
 
     #footer {width: 92%; margin: 0 auto}
+
+    #servicesContent{padding-top: 40px;}
+
+    .box {width: 100%}
+
+    #servicesAbout {
+        padding-top: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #servicesAbout div {width:100%;}
+
+    #servicesAbout img {width:100%;margin-bottom: 30px;}
+
+    #servicesBanner, #servicesContent, #servicesAbout {width: 92%; margin: 0 auto}
 }
