@@ -1,3 +1,316 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    width: 880px;
+    height: unset; /* low-res mobile device fix */
+    margin: 0 auto;
+}
+
+address, p {
+    line-height: 1.25;
+}
+
+/* nav header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    position: fixed; /* stretch goal #1 */
+    padding-top: 25px;
+    font-size: 14px;
+    height: 61px; 
+    background-color: white;
+    z-index: 2;
+}
+
+header nav {
+    display: flex;
+    height: 36px;
+    /* width: 700px; */
+    align-items: center;
+}
+
+header nav a {
+    color:#bbb;
+    margin-right: 66px;
+}
+
+header nav a:last-child {
+    margin-right: unset;
+}
+
+/* stretch goal #2 */
+header a {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+/* stretch goal #5 */
+nav a:hover {
+    color: #0000ff;
+    animation-duration: 2s;
+    animation-name: colorful;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    33% {color: #FF0000}
+    66% {color: #00FF00}
+    100% {color: #0000FF}
+}
+
+/* banner section */
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 590px;
+    padding-top: 61px;
+    border-bottom: 1px solid black;
+}
+
+#banner div {
+    width: 50%;
+}
+
+h1 {
+    font-size: 75px;
+    text-align: center;
+    margin:0
+}
+
+#banner div h1:last-of-type {
+    margin-bottom: 15px;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    width: 174px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: black;
+}
+
+/* stretch goal #5 */
+div:hover .button {
+    animation-duration: 1s;
+    animation-name: spin;
+}
+      
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+/* content section */
+
+.col2, .col3 {
+    margin: 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2 div {width: 49%}
+
+.col3 div {width: 32%}
+
+/* footer */
+
+#footer {
+    border-top: 1px solid black;
+    padding: 40px 0;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+#footer address, #footer p {
+    margin-bottom: 1em;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 14px;
+}
+
+/* servicesBanner */
+
+#servicesBanner {
+    padding-top: 86px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+/* servicesContent */
+
+#servicesContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 20px;
+    width: 420px;
+    margin-bottom: 40px;
+    background-color: #f4f3f4;
+}
+
+.box a {
+    margin-top: 20px;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 12px;
+    width: 141px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+}
+
+/* servicesAbout */
+
+#servicesAbout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+#servicesAbout div {
+    width: 400px;
+}
+
+ul {list-style: square inside;margin-top: 30px;}
+
+li {margin-bottom: 1em}
+
+/* servicesFooter */
+
+#servicesFooter {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+/* stretch goal #2 */
+
+@media (min-width:561px) and (max-width:899px) {
+    header {width: 100%;}
+
+    header nav a {margin-right: 10px;}
+}
+
+@media (max-width:560px) {
+    html, body, header {
+        width: 100%;
+        min-width: 420px;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-wrap: wrap;
+        height: 97px;
+    }
+
+    header nav a {margin-right: 10px;}
+
+    #servicesContent {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #servicesAbout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #servicesAbout img {margin-bottom: 30px;}
+}
