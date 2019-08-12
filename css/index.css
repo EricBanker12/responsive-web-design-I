@@ -76,7 +76,7 @@ html, body {
 }
 
 address, p {
-    line-height: 1.25;
+    line-height: 1.2;
 }
 
 /* nav header */
@@ -140,20 +140,28 @@ h1 {
 
 /* content section */
 
-.col2, .col3 {
-    margin: 36px 0;
+.col2 {
+    width: 98.5%;
+    margin: 36px 0 28px;
     display: flex;
     justify-content: space-between;
 }
 
 .col2 div {width: 49%}
 
-.col3 div {width: 32%}
+.col3 {
+    width: 98%;
+    margin: 28px 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col3 div {width: 31.8%}
 
 /* footer */
 
 #footer {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     padding: 40px 0;
     margin-top: 10px;
     margin-bottom: 75px;
