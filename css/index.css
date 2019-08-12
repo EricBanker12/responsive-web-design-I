@@ -70,8 +70,8 @@ a {
 }
 
 html, body {
+    /* width: 90vw; */
     width: 880px;
-    height: unset; /* low-res mobile device fix */
     margin: 0 auto;
 }
 
@@ -84,60 +84,32 @@ address, p {
 header {
     display: flex;
     justify-content: space-between;
-    width: 880px;
-    position: fixed; /* stretch goal #1 */
-    padding-top: 25px;
-    font-size: 14px;
-    height: 61px; 
-    background-color: white;
-    z-index: 2;
+    margin-top: 30px;
 }
 
 header nav {
+    width: 69%;
     display: flex;
-    height: 36px;
-    /* width: 700px; */
+    justify-content: space-between;
     align-items: center;
 }
 
 header nav a {
     color:#bbb;
-    margin-right: 66px;
 }
 
 header nav a:last-child {
     margin-right: unset;
 }
 
-/* stretch goal #2 */
-header a {
-    font-family: 'VT323', monospace;
-    font-size: 20px;
-}
-
-/* stretch goal #5 */
-nav a:hover {
-    color: #0000ff;
-    animation-duration: 2s;
-    animation-name: colorful;
-    animation-iteration-count: infinite;
-}
-
-@keyframes colorful {
-    33% {color: #FF0000}
-    66% {color: #00FF00}
-    100% {color: #0000FF}
-}
-
 /* banner section */
 
 #banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    height: 590px;
-    padding-top: 61px;
-    border-bottom: 1px solid black;
+    padding: 70px 0;
+    border-bottom: 2px solid black;
 }
 
 #banner div {
@@ -165,17 +137,6 @@ h1 {
     line-height: 34px;
     text-align: center;
     color: black;
-}
-
-/* stretch goal #5 */
-div:hover .button {
-    animation-duration: 1s;
-    animation-name: spin;
-}
-      
-@keyframes spin {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(360deg)}
 }
 
 /* content section */
@@ -281,7 +242,7 @@ li {margin-bottom: 1em}
 
 /* stretch goal #2 */
 
-@media (min-width:561px) and (max-width:899px) {
+/* @media (min-width:561px) and (max-width:899px) {
     header {width: 100%;}
 
     header nav a {margin-right: 10px;}
@@ -313,4 +274,4 @@ li {margin-bottom: 1em}
     }
 
     #servicesAbout img {margin-bottom: 30px;}
-}
+} */
