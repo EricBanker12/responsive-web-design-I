@@ -181,10 +181,12 @@ h1 {
 /* servicesBanner */
 
 #servicesBanner {
-    padding-top: 86px;
+    margin-top: 20px;
     padding-bottom: 40px;
     border-bottom: 1px solid black;
 }
+
+ #servicesBanner img {width: 100%}
 
 h2 {
     font-size: 28px;
